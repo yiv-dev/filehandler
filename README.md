@@ -9,4 +9,4 @@ Filehandler::save_file($filePath, $content);
 
 ```
 
-### nsee the methods in class for other functions
+### see the methods in class for other functions

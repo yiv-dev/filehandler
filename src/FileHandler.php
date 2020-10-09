@@ -23,7 +23,7 @@ class FileHandler
 
             return $filePath;
         } catch (\Exception $e) {
-            throw new \Exception($e->getMessage);
+            throw $e;
         }
     }
 
@@ -40,7 +40,7 @@ class FileHandler
             array_map('unlink', array_filter((array) glob($dir_name . DIRECTORY_SEPARATOR . '*')));
             return true;
         } catch (\Exception $e) {
-            throw new \Exception($e->getMessage);
+            throw $e;
         }
     }
 
@@ -67,7 +67,7 @@ class FileHandler
             }
             return true;
         } catch (\Exception $e) {
-            throw new \Exception($e->getMessage);
+            throw $e;
         }
     }
 
@@ -85,7 +85,7 @@ class FileHandler
             }
             return true;
         } catch (\Exception $e) {
-            throw new \Exception($e->getMessage);
+            throw $e;
         }
     }
 
@@ -119,7 +119,7 @@ class FileHandler
 
             return $pathToZipFile;
         } catch (\Exception $e) {
-            throw new \Exception($e->getMessage);
+            throw $e;
         }
     }
 
